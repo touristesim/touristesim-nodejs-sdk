@@ -157,6 +157,13 @@ try {
 }
 ```
 
+## Support
+
+For issues or questions:
+- **Technical Support**: tech@touristesim.net
+- **GitHub Issues**: https://github.com/touristesim/touristesim-nodejs-sdk/issues
+- **Dashboard**: https://partners.touristesim.net
+
 ## License
 
 MIT - see LICENSE file
