@@ -138,7 +138,7 @@ import {
   ValidationException,
   RateLimitException,
   ResourceNotFoundException
-} from 'touristesim-nodejs-sdk';
+} from '@tourist-esim/touristesim-nodejs-sdk';
 
 try {
   const plan = await sdk.plans().find(999);
