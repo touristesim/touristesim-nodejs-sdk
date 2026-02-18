@@ -1,6 +1,6 @@
 # Tourist eSIM Node.js SDK
 
-Official Node.js SDK for Tourist eSIM Partner API. Enable easy integration for resellers and affiliates to manage eSIM plans, orders, and customer data.
+Official Node.js SDK for Tourist eSIM Partner API. Enable easy integration for resellers and partners to manage eSIM plans, orders, and customer data.
 
 ## Features
 

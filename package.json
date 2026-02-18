@@ -1,7 +1,7 @@
 {
   "name": "touristesim-nodejs-sdk",
   "version": "1.0.0",
-  "description": "Official Node.js SDK for Tourist eSIM Partner API - Easy integration for resellers and affiliates",
+  "description": "Official Node.js SDK for Tourist eSIM Partner API - Easy integration for resellers and partners",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
