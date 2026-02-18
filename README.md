@@ -14,7 +14,7 @@ Official Node.js SDK for Tourist eSIM Partner API. Enable easy integration for r
 
 ## Requirements
 
-- Node.js 14+
+- Node.js 20 LTS or higher
 - npm or yarn
 
 ## Installation
