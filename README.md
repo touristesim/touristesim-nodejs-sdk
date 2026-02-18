@@ -168,7 +168,7 @@ For complete API documentation, visit:
 
 For issues or questions:
 - **Technical Support**: tech@touristesim.net
-- **GitHub Issues**: https://github.com/touristesim/touristesim-nodejs-sdk/issues
+- **GitHub Issues**: https://github.com/touristesim/tourist-esim-nodejs-sdk/issues
 - **Dashboard**: https://partners.touristesim.net
 
 ## License
