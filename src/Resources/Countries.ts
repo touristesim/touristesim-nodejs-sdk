@@ -1,6 +1,6 @@
-import { Resource } from './Resource';
-import { Country } from '../Models/Model';
-import { Collection } from '../Support/Collection';
+import { Resource } from './Resource.js';
+import { Country } from '../Models/Model.js';
+import { Collection } from '../Support/Collection.js';
 
 /**
  * Countries Resource

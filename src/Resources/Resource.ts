@@ -1,4 +1,4 @@
-import { HttpClient } from '../HttpClient';
+import { HttpClient } from '../HttpClient.js';
 
 /**
  * Base Resource class

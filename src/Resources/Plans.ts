@@ -1,6 +1,6 @@
-import { Resource } from './Resource';
-import { Plan } from '../Models/Model';
-import { Collection, PaginatedCollection } from '../Support/Collection';
+import { Resource } from './Resource.js';
+import { Plan } from '../Models/Model.js';
+import { Collection, PaginatedCollection } from '../Support/Collection.js';
 
 /**
  * Plans Resource

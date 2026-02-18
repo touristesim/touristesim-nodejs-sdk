@@ -1,8 +1,8 @@
 import axios, { AxiosInstance } from 'axios';
-import { Config } from '../Config';
-import { AuthenticationException } from '../Exceptions/ApiException';
-import { Token } from './Token';
-import { TokenCache } from './TokenCache';
+import { Config } from '../Config.js';
+import { AuthenticationException } from '../Exceptions/ApiException.js';
+import { Token } from './Token.js';
+import { TokenCache } from './TokenCache.js';
 
 /**
  * OAuth 2.0 Client for handling authentication

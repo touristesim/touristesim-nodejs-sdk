@@ -1,4 +1,4 @@
-import { Resource } from './Resource';
+import { Resource } from './Resource.js';
 
 /**
  * Regions Resource
@@ -13,8 +13,8 @@ export class Regions extends Resource {
 /**
  * Orders Resource
  */
-import { Order } from '../Models/Model';
-import { Collection, PaginatedCollection } from '../Support/Collection';
+import { Order } from '../Models/Model.js';
+import { Collection, PaginatedCollection } from '../Support/Collection.js';
 
 export class Orders extends Resource {
   async all(filters: Record<string, any> = {}): Promise<PaginatedCollection<Order>> {
@@ -44,7 +44,7 @@ export class Orders extends Resource {
 /**
  * Esims Resource
  */
-import { Esim } from '../Models/Model';
+import { Esim } from '../Models/Model.js';
 
 export class Esims extends Resource {
   async all(filters: Record<string, any> = {}): Promise<PaginatedCollection<Esim>> {

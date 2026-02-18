@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosError } from 'axios';
-import { Config } from './Config';
-import { OAuthClient } from './Auth/OAuthClient';
+import { Config } from './Config.js';
+import { OAuthClient } from './Auth/OAuthClient.js';
 import {
   ApiException,
   AuthenticationException,
@@ -9,7 +9,7 @@ import {
   ResourceNotFoundException,
   ServerException,
   ConnectionException,
-} from './Exceptions/ApiException';
+} from './Exceptions/ApiException.js';
 
 /**
  * HTTP Client with OAuth, retry logic, and error handling

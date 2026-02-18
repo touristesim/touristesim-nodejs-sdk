@@ -1,9 +1,9 @@
-import { Config, ConfigOptions } from './Config';
-import { OAuthClient } from './Auth/OAuthClient';
-import { HttpClient } from './HttpClient';
-import { Plans } from './Resources/Plans';
-import { Countries } from './Resources/Countries';
-import { Regions, Orders, Esims, Balance, Webhooks } from './Resources/index';
+import { Config, ConfigOptions } from './Config.js';
+import { OAuthClient } from './Auth/OAuthClient.js';
+import { HttpClient } from './HttpClient.js';
+import { Plans } from './Resources/Plans.js';
+import { Countries } from './Resources/Countries.js';
+import { Regions, Orders, Esims, Balance, Webhooks } from './Resources/index.js';
 
 /**
  * Main Tourist eSIM SDK class
@@ -90,11 +90,11 @@ export class TouristEsim {
 }
 
 // Export all classes and interfaces
-export { Config, ConfigOptions } from './Config';
-export { HttpClient } from './HttpClient';
-export { OAuthClient } from './Auth/OAuthClient';
-export { Token } from './Auth/Token';
-export { TokenCache } from './Auth/TokenCache';
+export { Config, ConfigOptions } from './Config.js';
+export { HttpClient } from './HttpClient.js';
+export { OAuthClient } from './Auth/OAuthClient.js';
+export { Token } from './Auth/Token.js';
+export { TokenCache } from './Auth/TokenCache.js';
 export {
   ApiException,
   AuthenticationException,
@@ -103,6 +103,6 @@ export {
   ResourceNotFoundException,
   ServerException,
   ConnectionException,
-} from './Exceptions/ApiException';
-export { Model, Plan, Country, Order, Esim } from './Models/Model';
-export { Collection, PaginatedCollection, PaginationMeta } from './Support/Collection';
+} from './Exceptions/ApiException.js';
+export { Model, Plan, Country, Order, Esim } from './Models/Model.js';
+export { Collection, PaginatedCollection, PaginationMeta } from './Support/Collection.js';

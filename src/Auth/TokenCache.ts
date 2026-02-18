@@ -1,5 +1,5 @@
 import NodeCache from 'node-cache';
-import { Token } from './Token';
+import { Token } from './Token.js';
 
 /**
  * In-memory token cache with optional persistence
