@@ -20,19 +20,19 @@ Official Node.js SDK for Tourist eSIM Partner API. Enable easy integration for r
 ## Installation
 
 ```bash
-npm install touristesim-nodejs-sdk
+npm install @tourist-esim/touristesim-nodejs-sdk
 ```
 
 or
 
 ```bash
-yarn add touristesim-nodejs-sdk
+yarn add @tourist-esim/touristesim-nodejs-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { TouristEsim } from 'touristesim-nodejs-sdk';
+import { TouristEsim } from '@tourist-esim/touristesim-nodejs-sdk';
 
 const sdk = new TouristEsim(
   'your-client-id',
