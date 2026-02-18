@@ -31,10 +31,10 @@
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
   },
-  "homepage": "https://github.com/touristesim/tourist-esim-nodejs-sdk",
+  "homepage": "https://github.com/touristesim/touristesim-nodejs-sdk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/touristesim/tourist-esim-nodejs-sdk.git"
+    "url": "https://github.com/touristesim/touristesim-nodejs-sdk.git"
   },
   "dependencies": {
     "axios": "^1.6.0",
