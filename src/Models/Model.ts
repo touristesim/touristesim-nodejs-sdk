@@ -127,6 +127,18 @@ export class Plan extends Model {
   getRegion(): string | null {
     return this.get('region', null);
   }
+
+  getNetwork(): { operator: string | null; speed: string | null } | null {
+    return this.get('network', null);
+  }
+
+  getNetworkOperator(): string | null {
+    return this.getNetwork()?.operator ?? null;
+  }
+
+  getNetworkSpeed(): string | null {
+    return this.getNetwork()?.speed ?? null;
+  }
 }
 
 /**
