@@ -250,4 +250,61 @@ export class Esim extends Model {
   getValidityEnd(): string | null {
     return this.get('validity_end', null);
   }
+
+  getCoverage(): Record<string, unknown> | null {
+    return this.get('coverage', null);
+  }
+
+  getCoverageType(): string | null {
+    const coverage = this.getCoverage();
+    return coverage?.type as string | null;
+  }
+
+  getCoverageLabel(): string | null {
+    const coverage = this.getCoverage();
+    return coverage?.label as string | null;
+  }
+
+  getCoverageCountries(): Record<string, unknown>[] {
+    const coverage = this.getCoverage();
+    return (coverage?.countries as Record<string, unknown>[]) || [];
+  }
+
+  getCoverageRegion(): Record<string, unknown> | null {
+    const coverage = this.getCoverage();
+    return (coverage?.region as Record<string, unknown>) || null;
+  }
+
+  getNetworkOperators(): Record<string, unknown> | null {
+    return this.get('network_operators', null);
+  }
+
+  getNetworkOperatorsCount(): number {
+    const operators = this.getNetworkOperators();
+    return (operators?.count as number) || 0;
+  }
+
+  getNetworkOperatorNames(): string[] {
+    const operators = this.getNetworkOperators();
+    return (operators?.operators as string[]) || [];
+  }
+
+  getShareLink(): Record<string, unknown> | null {
+    return this.get('share_link', null);
+  }
+
+  getShareLinkSlug(): string | null {
+    const shareLink = this.getShareLink();
+    return (shareLink?.slug as string) || null;
+  }
+
+  getShareLinkUrl(): string | null {
+    const shareLink = this.getShareLink();
+    return (shareLink?.url as string) || null;
+  }
+
+  getShareLinkPin(): string | null {
+    const shareLink = this.getShareLink();
+    return (shareLink?.pin as string) || null;
+  }
 }
