@@ -72,13 +72,16 @@ export class Model {
  */
 export class Plan extends Model {
   protected casts: Record<string, string> = {
-    id: 'integer',
     price: 'float',
     data: 'integer',
     validity_days: 'integer',
     reloadable: 'boolean',
     countries_count: 'integer',
   };
+
+  getPlanSlug(): string {
+    return this.get('plan_slug', '');
+  }
 
   getType(): string {
     return this.get('type', 'local');
@@ -176,10 +179,9 @@ export class Country extends Model {
  */
 export class Order extends Model {
   protected casts: Record<string, string> = {
-    id: 'integer',
-    plan_id: 'integer',
-    quantity: 'integer',
-    total_price: 'float',
+    items_count: 'integer',
+    amount: 'float',
+    is_sandbox: 'boolean',
   };
 
   getStatus(): string {
@@ -202,12 +204,8 @@ export class Order extends Model {
     return this.getStatus() === 'cancelled';
   }
 
-  getTotalPrice(): number {
-    return this.get('total_price', 0);
-  }
-
-  getQuantity(): number {
-    return this.get('quantity', 0);
+  getItemsCount(): number {
+    return this.get('items_count', 0);
   }
 }
 

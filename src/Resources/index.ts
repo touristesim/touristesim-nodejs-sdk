@@ -25,19 +25,14 @@ export class Orders extends Resource {
     );
   }
 
-  async find(id: number | string): Promise<Order> {
-    const response = await this.client.get(`/orders/${id}`);
+  async find(orderNumber: string): Promise<Order> {
+    const response = await this.client.get(`/orders/${orderNumber}`);
     return new Order(response.data);
   }
 
   async create(data: Record<string, any>): Promise<Order> {
     const response = await this.client.post('/orders', data);
     return new Order(response.data);
-  }
-
-  async cancel(id: number | string): Promise<boolean> {
-    await this.client.post(`/orders/${id}/cancel`, {});
-    return true;
   }
 }
 

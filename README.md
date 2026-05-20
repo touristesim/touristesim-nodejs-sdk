@@ -60,7 +60,7 @@ const plans = await sdk.plans().get({
 });
 
 // Get single plan
-const plan = await sdk.plans().find(123);
+const plan = await sdk.plans().find('vietnam_100mb_7days_7e87c5');
 
 // Get plans by country
 const usPlans = await sdk.plans().byCountry('US');
@@ -69,7 +69,7 @@ const usPlans = await sdk.plans().byCountry('US');
 const globalPlans = await sdk.plans().global();
 
 // Validate plan
-const validation = await sdk.plans().validate(123, 5);
+const validation = await sdk.plans().validate('vietnam_100mb_7days_7e87c5', 5);
 ```
 
 ### Countries
@@ -93,19 +93,17 @@ const featured = await sdk.countries().featured();
 ```typescript
 // Create order
 const order = await sdk.orders().create({
-  plan_id: 123,
-  quantity: 2,
-  customer_email: 'customer@example.com'
+  plans: [{ plan_slug: 'vietnam_100mb_7days_7e87c5', quantity: 1 }],
+  customer: { email: 'customer@example.com', name: 'Jane Doe' },
 });
 
 // Get orders
 const orders = await sdk.orders().all();
 
-// Get single order
-const order = await sdk.orders().find(456);
+// Get single order by order number
+const order = await sdk.orders().find('PO-260519MKAUVE');
 
-// Cancel order
-await sdk.orders().cancel(456);
+// To request a cancellation or refund, contact Tourist eSIM support
 ```
 
 ### eSIMs
@@ -141,7 +139,7 @@ import {
 } from '@tourist-esim/touristesim-nodejs-sdk';
 
 try {
-  const plan = await sdk.plans().find(999);
+  const plan = await sdk.plans().find('nonexistent_plan_slug');
 } catch (error) {
   if (error instanceof AuthenticationException) {
     console.error('Auth failed:', error.message);

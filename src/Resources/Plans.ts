@@ -19,9 +19,9 @@ export class Plans extends Resource {
     return new Plan(response.data);
   }
 
-  async validate(planId: number, quantity: number): Promise<Record<string, any>> {
+  async validate(planSlug: string, quantity: number): Promise<Record<string, any>> {
     const response = await this.client.post('/plans/validate', {
-      plan_id: planId,
+      plan_slug: planSlug,
       quantity,
     });
     return response.data || {};
